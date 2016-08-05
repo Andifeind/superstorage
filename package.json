@@ -1,0 +1,24 @@
+{
+  "name": "superstorage",
+  "version": "0.0.0",
+  "description": "Storage to share data between modules",
+  "main": "index.js",
+  "author": "Andi Heinkelein <andifeind@noname-media.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter lagoon-reporter tests/*.spec.js"
+  },
+  "keywords": [
+    "localstorage",
+    "sessionstorage",
+    "globalstorage",
+    "storage",
+    "share",
+    "store"
+  ],
+  "devDependencies": {
+    "inspect.js": "^1.2.0",
+    "lagoon-reporter": "^0.3.2",
+    "mocha": "^3.0.1"
+  }
+}
