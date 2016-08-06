@@ -1,6 +1,6 @@
 {
   "name": "superstorage",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Storage to share data between modules",
   "main": "superstorage.js",
   "author": "Andi Heinkelein <andifeind@noname-media.com>",
