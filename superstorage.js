@@ -1,6 +1,10 @@
 'use strict';
 
-let storages = {};
+if (!global.__superstorage) {
+  global.__superstorage = {};
+}
+
+let storages = global.__superstorage;
 
 class Superstorage {
   constructor(name) {
