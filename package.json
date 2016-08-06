@@ -2,7 +2,7 @@
   "name": "superstorage",
   "version": "0.0.0",
   "description": "Storage to share data between modules",
-  "main": "index.js",
+  "main": "superstorage.js",
   "author": "Andi Heinkelein <andifeind@noname-media.com>",
   "license": "MIT",
   "scripts": {

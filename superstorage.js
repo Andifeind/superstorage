@@ -23,6 +23,14 @@ class Superstorage {
     return this.storage.hasOwnProperty(key);
   }
 
+  inc(key) {
+    this.storage[key]++;
+  }
+
+  dec(key) {
+    this.storage[key]--;
+  }
+
   remove(key) {
     if (this.has(key)) {
       delete this.storage[key];

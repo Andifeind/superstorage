@@ -1,7 +1,6 @@
 'use strict';
 
 let inspect = require('inspect.js');
-
 let superstorage = require('../superstorage');
 
 describe('Superstorage', function() {
@@ -62,11 +61,29 @@ describe('Superstorage', function() {
     });
   });
 
+  describe('inc()', function() {
+    it('Should increment data from a storage', function() {
+      let storage = superstorage('superstorage-test');
+      storage.set('cnt', 0);
+      storage.inc('cnt');
+      inspect(storage.get('cnt')).isEql(1);
+    });
+  });
+
+  describe('dec()', function() {
+    it('Should decrement data from a storage', function() {
+      let storage = superstorage('superstorage-test');
+      storage.set('cnt', 0);
+      storage.dec('cnt');
+      inspect(storage.get('cnt')).isEql(-1);
+    });
+  });
+
   describe('remove()', function() {
     it('Should remove data into a storage', function() {
       let storage = superstorage('superstorage-test');
       storage.remove('foo');
-
+      storage.remove('cnt');
       inspect(storage.storage).isEql({});
     });
   });
